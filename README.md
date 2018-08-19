@@ -206,7 +206,7 @@ Shoe Security RPI
 ## Creating a telegram bot
 1. Open Telegram app in your laptop or mobile and start “BotFather”
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/55.jpg" width="100px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/55.jpg" width="400px">
 
 2. Type /newbot to create a new bot
 ![Image of S8step2](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/56.jpg)
