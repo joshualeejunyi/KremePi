@@ -158,7 +158,7 @@ Shoe Security RPI
 
 10. Click on “Create”. After create a table, back to your “configure action” and refresh that page. Select the “Logs” under the Table name and choose “my-iot-role” as for the IAM role name.  Then, click “Add Action”.
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/44.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/44.jpg" width="600px">
 
 ## Set-up and store data in the passcode database
 1. Login to aws using your credentials.
@@ -167,15 +167,15 @@ Shoe Security RPI
 
 3. Name it as “passcode”, `“*”` for Attribute and “doorbell/pass” for Topic filter. As before, under “Set one or more actions”, click “Add Action” and select the “Split message into multiple columns of a database table (DynamoDBv2), then click “configure action”
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/45.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/45.jpg" width="600px">
 
 4. Click on “Create a new resource” to create one. It will open up a new tab on DynamoDB console. Click on “Create table”. Fill the Table name as “Passcode”, and Partition key/Primary key as “passid".
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/46.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/46.jpg" width="600px">
 
 5. Click on “Create”. After create a table, back to your “configure action” and refresh that page. Select the “Passcode” under the Table name and choose “my-iot-role” as for the IAM role name.  Then, click “Add Action”.
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/47.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/47.jpg" width="600px">
 
 ## Set-up and store data in the visitors log database
 1. Login to aws using your credentials.
@@ -184,34 +184,34 @@ Shoe Security RPI
 
 3. Name it as “visitors”, `“*”` for Attribute and “doorbell/img” for Topic filter. As before, under “Set one or more actions”, click “Add Action” and select the “Split message into multiple columns of a database table (DynamoDBv2), then click “configure action”
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/48.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/48.jpg" width="600px">
 
 4. Click on “Create a new resource” to create one. It will open up a new tab on DynamoDB console. Click on “Create table”. Fill the Table name as “VisitorLogs”, and Partition key/Primary key as “date", and the sort key as “time”.
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/49.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/49.jpg" width="600px">
 
 5. Click on “Create”. After create a table, back to your “configure action” and refresh that page. Select the “Passcode” under the Table name and choose “my-iot-role” as for the IAM role name.  Then, click “Add Action”.
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/50.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/50.jpg" width="600px">
 
 # 7. AWS S3
 1. Under the “Services” navigation, search “s3” and navigate to the AWS S3
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/51.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/51.jpg" width="600px">
 
 2. Next, click on “Create Bucket”.
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/52.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/52.jpg" width="600px">
 
 3. Enter a unique name for your new bucket. (Keep track of the bucket names that you enter.) After which, click on “Create” on the bottom left corner.
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/53.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/53.jpg" width="600px">
 
 4. Next, repeat from step b) to create another container. (Keep track of both the container names as we will be using it later)
 
 5. When the buckets are created, enter the bucket and upload any image into the bucket, then click on the image and take note of the “Link” in the overview. The “Link” without the image name will be your bucket url. For this case, my bucket url will be "https://s3-ap-southeast-1.amazonaws.com/dexjosh-doorcam/ ". Repeat this step for both buckets to get the bucket links that will be used later.
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/54.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/54.jpg" width="600px">
 
 # 8. Telegram Bot
 ## Creating a telegram bot
