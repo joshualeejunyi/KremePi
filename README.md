@@ -166,13 +166,16 @@ Shoe Security RPI
 2. Open the AWS IOT console, click on “ACT” and click “Create”.
 
 3. Name it as “passcode”, `“*”` for Attribute and “doorbell/pass” for Topic filter. As before, under “Set one or more actions”, click “Add Action” and select the “Split message into multiple columns of a database table (DynamoDBv2), then click “configure action”
-![Image of S6step3](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/45.jpg)
+<br>
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/45.jpg" width="400px">
 
 4. Click on “Create a new resource” to create one. It will open up a new tab on DynamoDB console. Click on “Create table”. Fill the Table name as “Passcode”, and Partition key/Primary key as “passid".
-![Image of S6step4](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/46.jpg)
+<br>
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/46.jpg" width="400px">
 
 5. Click on “Create”. After create a table, back to your “configure action” and refresh that page. Select the “Passcode” under the Table name and choose “my-iot-role” as for the IAM role name.  Then, click “Add Action”.
-![Image of S6step5](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/47.jpg)
+<br>
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/47.jpg" width="400px">
 
 ## Set-up and store data in the visitors log database
 1. Login to aws using your credentials.
@@ -180,10 +183,12 @@ Shoe Security RPI
 2. Open the AWS IOT console, click on “ACT” and click “Create”.
 
 3. Name it as “visitors”, `“*”` for Attribute and “doorbell/img” for Topic filter. As before, under “Set one or more actions”, click “Add Action” and select the “Split message into multiple columns of a database table (DynamoDBv2), then click “configure action”
-![Image of S6step3](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/48.jpg)
+<br>
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/48.jpg" width="400px">
 
 4. Click on “Create a new resource” to create one. It will open up a new tab on DynamoDB console. Click on “Create table”. Fill the Table name as “VisitorLogs”, and Partition key/Primary key as “date", and the sort key as “time”.
-![Image of S6step4](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/49.jpg)
+<br>
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/49.jpg" width="400px">
 
 5. Click on “Create”. After create a table, back to your “configure action” and refresh that page. Select the “Passcode” under the Table name and choose “my-iot-role” as for the IAM role name.  Then, click “Add Action”.
 <br>
