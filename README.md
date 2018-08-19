@@ -295,14 +295,16 @@ The first part of this tutorial is based off of a online tutorial, [pyimagesearc
 ```> init 6```
 
 3. After rebooting, we will now install the dependencies. After updating and upgrading all existing packages, we will install several developer tools, such as CMake, and several OpenCV requirements.
-```> sudo apt-get update && sudo apt-get upgrade
+```
+> sudo apt-get update && sudo apt-get upgrade
 > sudo apt-get install build-essential cmake pkg-config
 > sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev
 > sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 > sudo apt-get install libxvidcore-dev libx264-dev
 > sudo apt-get install libgtk2.0-dev libgtk-3-dev
 > sudo apt-get install libatlas-base-dev gfortran
-> sudo apt-get install python2.7-dev python3-dev```
+> sudo apt-get install python2.7-dev python3-dev
+```
 
 4. After the dependencies have been installed, we can now download the OpenCV source code.
 ```> mkdir /home/pi/assignment
