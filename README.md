@@ -33,10 +33,10 @@ Nowadays, there is a trend that most of us would invest in high-end sneakers or 
 ## How will the final RPI set-up look like?
 
 Gate Security RPI
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/1.jpg)
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/1.jpg" width="100px">
 
 Shoe Security RPI
-![Image of Shoe security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/2.jpg)
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/2.jpg" width="100px">
 
 ## Web Application Look and Feel
 
