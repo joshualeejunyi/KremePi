@@ -223,12 +223,12 @@ Shoe Security RPI
 ## Get own chat ID
 1. Open Telegram app in your laptop or mobile and search for @get_id_bot
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/60.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/60.jpg" width="100px">
 
 2. Type /start to get your chat id
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/61.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/61.jpg" width="100px">
 
 3. Record down the chat id for later use. 
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/62.jpg" width="400px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/62.jpg" width="100px">
