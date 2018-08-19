@@ -1,0 +1,64 @@
+{% extends "bootstrap/base.html" %}
+<!DOCTYPE html>
+	{% block title %}
+		Light Sensor Data
+	{% endblock %}
+	{% block scripts %}
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load('visualization', '1', {'packages':['corechart']});
+			google.setOnLoadCallback(drawChart);
+			function drawChart() {
+				var data = new google.visualization.DataTable();	   
+				data.addColumn('string', 'Date/Time');
+				data.addColumn('number', 'Light Value');
+				data.addRows([
+					{%- for date, time, lightvalue in data %}
+						['{{ date }} {{time}}', {{ lightvalue }}],
+					{%- endfor %}
+				]);
+				var chart = new google.visualization.LineChart(
+					document.getElementById('chart_div'));
+					chart.draw(data, {legend: 'none', vAxis: {baseline: 0},
+					colors: ['#00C7CE', '#2200BC']});
+			}
+		</script>
+		<script>
+			$(document).ready(function () {
+				setInterval(function () {
+				location.reload();
+				//drawChart();
+				}, 3000);
+			});
+		</script>
+	{% endblock %}
+	{% block content %}
+		<h1  style="margin: 0 auto; text-align: center; background-color: #3E50B4; color: white; padding: 3%; box-shadow: 2px 2px 10px #888888;">
+			KremePi Dash Outdoor Security System
+		</h1>
+		<div id="content" style="width: 90%; text-align: center; margin: 0 auto; background-color: #FFFFF0; color: black; padding: 3%; padding-top: 1%; box-shadow: 2px 2px 10px #888888; margin-top: 3%;">
+			<h1 style="text-align: center;" ><b>Light Sensor Data</b></h1>
+			<div id="chart_div"></div>
+			<h5>
+			<a href="/">Go Back</a>
+			</h5>
+			<div class="box-body" style="margin-top: 4%; height: 600px; overflow: auto;">
+				<table class="table table-hover dataTable" role="grid" border="1">
+					<tr>
+						<th>Date</th>
+						<th>Time</th>
+						<th>Light Value</th>
+					</tr>
+				{%- for date, time, lightvalue in data %}
+					<tr>
+						<td>{{ date }}</td>
+						<td>{{ time }}</td>
+						<td>{{ lightvalue }}</td>
+					</tr>
+				{%- endfor %}
+				</table>
+			</div>
+		</div>
+	{% endblock %}
+</html>
