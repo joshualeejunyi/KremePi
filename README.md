@@ -49,7 +49,7 @@ Shoe Security RPI
 ![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/9.jpg)
 ![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/10.jpg)
 ![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/11.jpg)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/12.jpg
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/12.jpg)
 ![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/13.jpg)
 
 # 2. Hardware Requirements 
