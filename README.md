@@ -33,24 +33,24 @@ Nowadays, there is a trend that most of us would invest in high-end sneakers or 
 ## How will the final RPI set-up look like?
 
 Gate Security RPI
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/1.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/1.jpg)
 
 Shoe Security RPI
-![Image of Shoe security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/2.jpg =250x)
+![Image of Shoe security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/2.jpg)
 
 ## Web Application Look and Feel
 
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/3.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/4.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/5.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/6.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/7.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/8.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/9.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/10.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/11.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/12.jpg =250x)
-![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/13.jpg =250x)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/3.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/4.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/5.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/6.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/7.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/8.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/9.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/10.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/11.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/12.jpg)
+![Image of web interface](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/13.jpg)
 
 # 2. Hardware Requirements 
 
@@ -68,21 +68,21 @@ Shoe Security RPI
 
 ## a) Gate Security RPI
 **Final Set-up**
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/14.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/14.jpg)
 **Connect the Buzzer**
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/15.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/15.jpg)
 **Connect the LEDs**
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/16.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/16.jpg)
 **Connect the Buttons**
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/17.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/17.jpg)
 **Connect the LCD**
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/18.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/18.jpg)
 
 ## b) Shoe Security RPI
 **Final Set-up**
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/19.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/19.jpg)
 **Connect the LEDs**
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/20.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/20.jpg)
 **Connect the Buzzer**
-![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/21.jpg =250x)
+![Image of Gate security RPI set-up](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/21.jpg)
 **Connect the Buttons**
