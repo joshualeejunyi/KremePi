@@ -210,19 +210,19 @@ Shoe Security RPI
 
 2. Type /newbot to create a new bot
 <br>
-![Image of S8step2](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/56.jpg)
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/56.jpg" width="400px">
 
 3. Give a name to your bot that describes its purpose.
 <br>
-![Image of S8step3](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/57.jpg)
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/57.jpg" width="400px">
 
 4. Give a username to your bot. Make sure it ends with `_bot`
 <br>
-![Image of S8step4](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/58.jpg)
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/58.jpg" width="400px">
 
 5. Copy down the access token that is issued by BotFather
 <br>
-![Image of S8step5](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/59.jpg)
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/59.jpg" width="400px">
 
 ## Get own chat ID
 1. Open Telegram app in your laptop or mobile and search for @get_id_bot
