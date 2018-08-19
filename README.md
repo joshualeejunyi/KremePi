@@ -289,10 +289,14 @@ Shoe Security RPI
 The first part of this tutorial is based off of a online tutorial, [pyimagesearch by Adrian Rosebrock!](https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/).
 
 1. Firstly, we would need to expand the filesystem to include all the available space on the microSD card. This is because the software takes up quite a big amount of space. 
-```> sudo raspi-config```
+```
+> sudo raspi-config
+```
 
 2. Select ‘Advanced Options’ in the menu and select ‘Expand filesystem’.  You will then be guided alont to run through the process of expanding the filesystem. After which, reboot the system.
-```> init 6```
+```
+> init 6
+```
 
 3. After rebooting, we will now install the dependencies. After updating and upgrading all existing packages, we will install several developer tools, such as CMake, and several OpenCV requirements.
 ```
@@ -307,51 +311,68 @@ The first part of this tutorial is based off of a online tutorial, [pyimagesearc
 ```
 
 4. After the dependencies have been installed, we can now download the OpenCV source code.
-```> mkdir /home/pi/assignment
+```
+> mkdir /home/pi/assignment
 > cd /home/pi/assignment
 > wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.4.1.zip
-> unzip opencv.zip```
+> unzip opencv.zip
+```
 
 5. We would also need to download the opencv_contrib repository as well, as we will want the full install of OpenCV 3 for all of its various features.
-```> wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.4.1.zip
-> unzip opencv_contrib.zip```
+```
+> wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.4.1.zip
+> unzip opencv_contrib.zip
+```
 
 6. We will also install pip, the Python package manager.
-```> wget https://bootstrap.pypa.io/get-pip.py
+```
+> wget https://bootstrap.pypa.io/get-pip.py
 > sudo python get-pip.py
-> sudo python3 get-pip.py```
+> sudo python3 get-pip.py
+```
 
 7. We will be using a virtualenv for our program. This is a standard practice for Python programming, and as such, we will be using it as well.
-```> sudo pip install virtualenv virtualenvwrapper
-> sudo rm -rf ~/.cache/pip```
+```
+> sudo pip install virtualenv virtualenvwrapper
+> sudo rm -rf ~/.cache/pip
+```
 
 8. We will need to add the following to our ~/.profile file.
 ```
-# virtualenv and virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.6 
-# I had to add this in to work
 ```
 
 9. In our command prompt, we will need to reload the ~/.profile file for it to take effect. We can do so by executing:
-```> source ~/.profile```
+```
+> source ~/.profile
+```
 
 10. After this, we can now make our virtualenv in python3.
-```> mkvirtualenv cv -p python3```
+```
+> mkvirtualenv cv -p python3
+```
 
 11. Refresh the ~/.profile file once again, and we can work on our newly created virtual environment.
-```> source ~/.profile
-> workon cv```
+```
+> source ~/.profile
+> workon cv
+```
 
 12. You will know if you are in the virtual environment when you see a “(cv)” at the side of your command line.
-```(cv) > #this is the command line```
+```
+(cv) > #this is the command line
+```
 
 13. Now that we are in the virtual environment, we can install NumPy, used for numerical processing.
-```(cv) > pip install numpy```
+```
+(cv) > pip install numpy
+```
 
 14. After completion, we can finally make, compile and install OpenCV.
-```(cv) > cd ~/opencv-3.3.0/
+```
+(cv) > cd ~/opencv-3.3.0/
 (cv) > mkdir build
 (cv) > cd build
 (cv) > cmake -D CMAKE_BUILD_TYPE=RELEASE \
@@ -359,28 +380,39 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.6
 -D INSTALL_PYTHON_EXAMPLES=ON \
 -D INSTALL_C_EXAMPLES=OFF\
     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.3.0/modules \
-    -D BUILD_EXAMPLES=ON ..```
+    -D BUILD_EXAMPLES=ON ..
+```
 
 15. Before we compile, we will have to expand the swap space size of the raspberry pi, be editing /etc/dphys-swapfile and changing the ‘CONF_SWAPSIZE’ variable to ‘1024’.
 
 16. After which, we can restart the swap service by running:
-```(cv) > sudo /etc/init.d/dphys-swapfile stop
-(cv) > sudo /etc/init.d/dphys-swapfile start```
+```
+(cv) > sudo /etc/init.d/dphys-swapfile stop
+(cv) > sudo /etc/init.d/dphys-swapfile start
+```
 
 17. Now, we’re ready to compile OpenCV.
-```(cv) > make -j4```
+```
+(cv) > make -j4
+```
 
 18. Compiling OpenCV alone will take a very long time, as the Raspberry Pi is not the most powerful of machines. Compiling alone took about 3-4 hours for me personally, while the entire process took me a whole day! After it’s done, we can (finally) install OpenCV 3.
-```(cv) > sudo make install
-(cv) > sudo ldconfig```
+```
+(cv) > sudo make install
+(cv) > sudo ldconfig
+```
 
 19. After the install, we should check /usr/local/lib/python3.6/site-packages for the cv2.s file. It should be something along the lines of ‘cv2.cpython-xxxx.so’. However, it should be cv2.so alone instead. Apparently, when installed for python3, it will have this issue. However, it is not difficult to correct that, by just renaming the file.
-```(cv) > cd /usr/local/lib/python3.5/site-packages/
-(cv) > sudo mv cv2.cpython-xxxx.so cv2.so # adjust the cv2 filename accordingly```
+```
+(cv) > cd /usr/local/lib/python3.5/site-packages/
+(cv) > sudo mv cv2.cpython-xxxx.so cv2.so # adjust the cv2 filename accordingly
+```
 
 20. After renaming, we can sym-link the cv2.so file to our cv virtual environment.
-```(cv) > cd ~/.virtualenvs/cv/lib/python3.6/site-packages/
-(cv) > ln -s /usr/local/lib/python3.6/site-packages/cv2.so cv2.so```
+```
+(cv) > cd ~/.virtualenvs/cv/lib/python3.6/site-packages/
+(cv) > ln -s /usr/local/lib/python3.6/site-packages/cv2.so cv2.so
+```
 
 21. Now, we can change our swapfile back to the original size of 100. Just reverse the process we have done earlier.
 
@@ -403,35 +435,45 @@ It will then use the Face Training code in order to save the faces into a .yml f
 This .yml file will then be used by the Face Recognition code to identify the face based off of confidence, meaning that the software will give a percentage of confidence that the face matches the one stored in the .yml file.
 
 1. Now that we have installed the OpenCV software, we can now proceed to install the other software in the virtual environment. As the virtual environment is isolated from the Raspberry Pi’s main raspbian installation, we would also be required to install Flask, gevent, gpiozero, MySQL, and several other important software.
-```(cv) > pip install Flask
+```
+(cv) > pip install Flask
 (cv) > pip install gevent
 (cv) > pip install smbus2
 (cv) > pip install rpi-lcd
 (cv) > pip install gpiozero
 (cv) > pip install Adafruit_Python_DHT==1.1.2
 (cv) > pip install mysqlclient
-(cv) > pip install flask-bootstrap```
+(cv) > pip install flask-bootstrap
+```
 
 2. MySQL will prompt you to configure the root passwords and the like. Just follow the guide and it should be alright.
 
 3. Now that we have installed MySQL, we need to setup the database for our project.
-```(cv) > mysql -u root -p dmitiot```
+```
+(cv) > mysql -u root -p dmitiot
+```
 
 4. After logging in, we shall create an assignment database.
-```mysql> create database assignment;```
+```
+mysql> create database assignment;
+```
 
 5. After which, we will create and assignment user to access the database, giving the user the password ‘joshanddexpassword.
-```mysql> CREATE USER ‘assignmentuser’@’localhost’ IDENTIFIED by ‘joshanddexpassword;
+```
+mysql> CREATE USER ‘assignmentuser’@’localhost’ IDENTIFIED by ‘joshanddexpassword;
 mysql> GRANT ALL PRIVILEGES ON assignment.* TO ‘assignmentuser’@’localhost’;
 mysql> FLUSH PRIVILEGES;
-mysql> quit;```
+mysql> quit;
+```
 
 6. Now, we can log in to the database and create the necessary tables, and insert the necessary data.
-```(cv) > mysql -u assignmentuser -p
+```
+(cv) > mysql -u assignmentuser -p
 mysql> USE assignment;
 mysql> CREATE TABLE Users (UserID INT, Username VARCHAR(45), DateRegistered TIMESTAMP, PRIMARY KEY (UserID));
 mysql> CREATE TABLE Security (ID INT AUTO_INCREMENT, Passcode INT, FaceScanConfidence INT, PRIMARY KEY(ID));
-mysql.> INSERT INTO Security (FaceScanConfidence) VALUES (40);```
+mysql.> INSERT INTO Security (FaceScanConfidence) VALUES (40);
+```
 
 7. The data that we inserted into the Security table is firstly the passcode for the button combinations and the confidence level of the facial recognition that will allow the user to login.
 
