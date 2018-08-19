@@ -139,7 +139,7 @@ Shoe Security RPI
 
 3. Open the navigations on the left. Click on Manage, and then Things.
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/33.jpg" width="600px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/33.jpg" width="300px">
 
 4. Click on “Create” on the top right corner. Then, click on Create a single thing
 <br>
@@ -157,7 +157,7 @@ Shoe Security RPI
 
 8. When all is completed, click on “done” to return to the thing selection page. Then, click on the newly created thing. 
 <br>
-<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/37.jpg" width="600px">
+<img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/37.jpg" width="300px">
 
 9. On the left hand side, click on interact, then copy the REST API endpoint onto a notepad for use later. 
 <br>
