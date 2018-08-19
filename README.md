@@ -209,15 +209,19 @@ Shoe Security RPI
 <img src="https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/55.jpg" width="400px">
 
 2. Type /newbot to create a new bot
+<br>
 ![Image of S8step2](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/56.jpg)
 
 3. Give a name to your bot that describes its purpose.
+<br>
 ![Image of S8step3](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/57.jpg)
 
 4. Give a username to your bot. Make sure it ends with `_bot`
+<br>
 ![Image of S8step4](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/58.jpg)
 
 5. Copy down the access token that is issued by BotFather
+<br>
 ![Image of S8step5](https://github.com/joshualeejunyi/KremePi/blob/master/Documentation/Images/59.jpg)
 
 ## Get own chat ID
